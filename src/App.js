@@ -3,6 +3,7 @@ import ProgressBarContainer from './components/ProgressBarContainer';
 import InfiniteScrollContainer from './components/InfiniteScrollContainer';
 import FormContainer from './components/FormContainer';
 import MovingDot from './components/MovingDot';
+import Accordian from './components/Accordian';
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
       <InfiniteScrollContainer />      */}
       <FormContainer />
       <MovingDot />
+      <Accordian />
+
     </div>
   );
 }
