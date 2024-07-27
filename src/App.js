@@ -4,6 +4,7 @@ import InfiniteScrollContainer from './components/InfiniteScrollContainer';
 import FormContainer from './components/FormContainer';
 import MovingDot from './components/MovingDot';
 import Accordian from './components/Accordian';
+import TaskApp from './components/TaskApp';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <FormContainer />
       <MovingDot />
       <Accordian />
-
+      <TaskApp />
     </div>
   );
 }
