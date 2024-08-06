@@ -57,3 +57,7 @@ body{
     object-fit: cover;
     margin-bottom: 3px;
 }
+
+.app{
+    align-items: center;
+}
