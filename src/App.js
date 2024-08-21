@@ -9,8 +9,32 @@ import NestedComments from './components/nested-comments/NestedComments';
 import commentsData from './data/comment.json';
 import Square from './components/tic-tac-toe/Square';
 import Board from './components/tic-tac-toe/Board';
+import Autocomplete from './components/autocomplete/Autocomplete';
 
 function App() {
+  // const fetchSuggestions = async (query) =>{
+  //   const response = await fetch(`https://dummyjson/recipes/search?q=${query}`);
+  //   if(!response.ok){
+  //     throw new Error("Network response is not ok.")
+  //   } 
+  //   const result = await response.json();
+  //   console.log("result", result);
+  //   return result.recipes;
+
+  // }
+
+//   const staticData = [
+//     "apple",
+//     "banana",
+//     "orange",
+//     "grape",
+//     "mango",
+//     "melon",
+//     "berry",
+//     "peach",
+//     "cherry",
+//     "plum"
+// ];
   return (
     <div className="app">
       {/* <ProgressBarContainer />
@@ -19,7 +43,7 @@ function App() {
       <MovingDot />
       <Accordian />
       <TaskApp /> */}
-      <h1>Tic Tac Toe</h1>
+      {/* <h1>Tic Tac Toe</h1> */}
       {/* <NestedComments comments={commentsData} 
                       onSubmit={()=>{}} 
                       onEdit={()=>{}} 
@@ -27,7 +51,20 @@ function App() {
                       onUpVote={()=>{}}
                       onDownVote={()=>{}}/> */}
 
-      <Board />
+      {/* <Board /> */}
+      {/* <h1>Autocomplete</h1> */}
+      {/* <Autocomplete placeholder={"Enter recipe"} 
+                    staticData={staticData}
+                    fetchSuggestions={fetchSuggestions}
+                    dataKey={"name"}
+                    customLoading={<>Loading Recipes...</>}
+                    onSelect={(res)=>{console.log(res)}}
+                    onChange={()=>{}}
+                    onBlur={()=>{}}
+                    onFocus={()=>{}}
+                    customStyles={{}}
+        /> */}
+        <h1>Carousel</h1>
     </div>
   );
 }
