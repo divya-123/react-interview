@@ -10,6 +10,7 @@ import commentsData from './data/comment.json';
 import Square from './components/tic-tac-toe/Square';
 import Board from './components/tic-tac-toe/Board';
 import Autocomplete from './components/autocomplete/Autocomplete';
+import Map from './components/Map';
 
 function App() {
   // const fetchSuggestions = async (query) =>{
@@ -37,12 +38,12 @@ function App() {
 // ];
   return (
     <div className="app">
-      {/* <ProgressBarContainer />
-      <InfiniteScrollContainer />      */}
-      {/* <FormContainer />
+      <ProgressBarContainer />
+      <InfiniteScrollContainer />     
+      <FormContainer />
       <MovingDot />
-      <Accordian />
-      <TaskApp /> */}
+      {/* <Accordian /> */}
+      <TaskApp />
       {/* <h1>Tic Tac Toe</h1> */}
       {/* <NestedComments comments={commentsData} 
                       onSubmit={()=>{}} 
@@ -64,7 +65,8 @@ function App() {
                     onFocus={()=>{}}
                     customStyles={{}}
         /> */}
-        <h1>Carousel</h1>
+        {/* <h1>Carousel</h1> */}
+        <Map />
     </div>
   );
 }
