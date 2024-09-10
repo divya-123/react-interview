@@ -11,8 +11,11 @@ import Square from './components/tic-tac-toe/Square';
 import Board from './components/tic-tac-toe/Board';
 import Autocomplete from './components/autocomplete/Autocomplete';
 import Map from './components/Map';
+import Counter from './components/Counter';
+import useWindowSize from './hooks/use-windowSize';
 
 function App() {
+  const {height, width} = useWindowSize();
   // const fetchSuggestions = async (query) =>{
   //   const response = await fetch(`https://dummyjson/recipes/search?q=${query}`);
   //   if(!response.ok){
@@ -66,7 +69,10 @@ function App() {
                     customStyles={{}}
         /> */}
         {/* <h1>Carousel</h1> */}
-        <Map />
+        {/* <Map /> */}
+        {/* <Counter /> */}
+        <p>Height: {height}</p>
+        <p>Width: {width}</p>
     </div>
   );
 }
